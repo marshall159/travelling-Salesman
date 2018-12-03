@@ -13,7 +13,7 @@ def read_cities(file_name):
 
     for line in fin:
         #print(line)
-        cities_list.append(line.split())
+        cities_list.append(line.split('\t'))
 
      for city in cities_list:
         print(city)
