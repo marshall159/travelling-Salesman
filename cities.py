@@ -1,4 +1,5 @@
 def read_cities(file_name):
+    # no unit tests
     """
     Read in the cities from the given `file_name`, and return 
     them as a list of four-tuples: 
@@ -6,9 +7,12 @@ def read_cities(file_name):
      Use this as your initial `road_map`, that is, the cycle 
        Alabama -> Alaska -> Arizona -> ... -> Wyoming -> Alabama.
     """
-    pass
+    fin = open(file_name)
+    for line in fin:
+        print(line)
   
 def print_cities(road_map):
+    # no unit tests
     """
     Prints a list of cities, along with their locations. 
     Print only one or two digits after the decimal point.
@@ -53,6 +57,7 @@ def print_cities(road_map):
     pass
 
  def print_map(road_map):
+    # no unit tests
     """
     Prints, in an easily understandable format, the cities and 
     their connections, along with the cost for each connection 
@@ -61,11 +66,12 @@ def print_cities(road_map):
     pass
 
  def main():
+    # no unit tests
     """
     Reads in, and prints out, the city data, then creates the "best"
     cycle and prints it out.
     """
-    pass
-    
+    read_cities('city-data.txt')
+
  if __name__ == "__main__":
     main()
